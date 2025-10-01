@@ -1,31 +1,31 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "gurkirat",
-    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "full-stack developer",
+    name: "gurkirat singh",
+    image: "/singh-avatar.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    role: "SWE @ OPTrust",
     bio: "I love attending hackathons",
     email: "singh.gurkirat2707@gmail.com",
     linkedin: "gurkiratz",
     github: "gurkiratz",
-    instagram: "",
+    instagram: "gurkiratxz",
   },
   projects: [
     {
-      name: `morethan-log`,
-      href: "https://github.com/morethanmin/morethan-log",
+      name: `Projects`,
+      href: "https://gurkiratz.co/projects",
     },
   ],
   // blog setting (required)
   blog: {
-    title: "morethan-log",
-    description: "welcome to morethan-log!",
+    title: "gurkirat singh",
+    description: "welcome to my thoughts!",
     scheme: "dark", // 'light' | 'dark' | 'system'
   },
 
   // CONFIG configration (required)
-  link: "https://morethan-log.vercel.app",
-  since: 2022, // If leave this empty, current year will be used.
+  link: "https://gurkirat-portfolio.vercel.app",
+  since: 2024, // If leave this empty, current year will be used.
   lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
 
@@ -69,7 +69,7 @@ const CONFIG = {
     },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  revalidateTime: 21600 * 7, // revalidate time for [slug], index
+  revalidateTime: 60*60*24, // revalidate time for [slug], index - every 24 hours
 }
 
 module.exports = { CONFIG }
