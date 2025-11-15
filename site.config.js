@@ -69,7 +69,7 @@ const CONFIG = {
     },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  revalidateTime: 60*60*24, // revalidate time for [slug], index - every 24 hours
+  revalidateTime: 60 * 60, // revalidate time for [slug], index - every 1 hour
 }
 
 module.exports = { CONFIG }
